@@ -9,12 +9,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #24292e;
-    /* background-color: #fff; */
     font-weight: 600;
 }
 
 a {
-    /* color: #0366d6; */
     color:#006ba6;
     text-decoration: none;
     font-weight: 600;
@@ -51,9 +49,6 @@ li.list {
 }
 
 .content {
-    /* color: #f97f46; */
-    /* color:#fdca40; */
-    /* color:#599b88; */
     color:#9ea5ad;
     text-align: center;
 }
