@@ -1,0 +1,16 @@
+body {
+    color: #24292e;
+    font-family: "Roboto",sans-serif;
+    /* font-size: 2em; */
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
