@@ -1,16 +1,35 @@
 body {
     color: #24292e;
+    background-color: #24292e;
     font-family: "Roboto",sans-serif;
     /* font-size: 2em; */
     line-height: 1.5;
     word-wrap: break-word;
 }
 
+h1.title-page {
+    text-align: center;
+    padding: 10px;
+    background-color: #24292e;
+}
+
+h3.home-list {
+    padding-left: 2%;
+    background-color: #24292e;
+}
+
 a {
     color: #0366d6;
     text-decoration: none;
+    background-color: #24292e;
 }
 
 a:hover {
     text-decoration: underline;
+    background-color: #24292e;
+}
+
+li.list {
+    list-style: none;
+    background-color: #24292e;
 }
