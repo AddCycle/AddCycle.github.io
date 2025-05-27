@@ -5,9 +5,51 @@
     <title>ChaosMod Wiki</title>
     <link rel="stylesheet" href="/style/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+    <style>
+    table {
+      margin: 1em;
+      border-collapse: collapse;
+    }
+    td {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #444;
+      background: #222;
+      margin-left:0;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      image-rendering: pixelated;
+    }
+    .result {
+      margin-top: 1em;
+      font-weight: bold;
+      display: flex;
+      padding:0;
+    }
+    .recipe {
+  display: flex;
+  flex-direction: line; /* stack grid and result vertically */
+  align-items: center;
+}
+
+#recipe-grid table td {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+}
+
+#recipe-result {
+  margin-top: 0;
+  text-align: center;
+}
+  </style>
 </head>
 <body>
-     <div id="recipe-grid"></div>
+    <h1 class="title-page"><a href="#">ChaosMod Wiki</a></h1>
+    <h2 class="content" style="text-align:left;margin-left:1%;">Crafting</h2>
+    <div id="recipes"></div>
     <script src="/assets/scripts/recipe.js"></script>
 </body>
 </html>

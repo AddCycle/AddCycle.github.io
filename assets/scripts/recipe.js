@@ -1,4 +1,14 @@
 console.log("hello")
+async function loadRecipes() {
+    const response = await fetch('/assets/recipes/index.json');
+    const files = await response.json();
+
+    for (const file of files) {
+        const recipe = await fetch(`/assets/recipes/${file}`).then(r => r.json());
+        renderRecipe(recipe);
+    }
+}
+
 async function loadRecipe(name) {
     const res = await fetch(`/assets/recipes/${name}.json`);
     const data = await res.json();
@@ -6,8 +16,14 @@ async function loadRecipe(name) {
 }
 
 function renderRecipe(recipe) {
-    const grid = document.getElementById('recipe-grid');
-    grid.innerHTML = '';
+    const container = document.createElement('div');
+    container.className = 'recipe';
+
+    const grid = document.createElement('div');
+    grid.className = 'recipe-grid';
+
+    const result = document.createElement('div');
+    result.className = 'recipe-result';
 
     const pattern = recipe.pattern || ['   ', '   ', '  '];
     const key = recipe.key || {};
@@ -32,9 +48,24 @@ function renderRecipe(recipe) {
     });
 
     grid.appendChild(table);
+
+    if (recipe.result) {
+        const resultItem = recipe.result.item.replace(':', '_');
+        result.innerHTML = `
+            <img src="/assets/static/item/${resultItem}.png" alt="${resultItem}" style="margin-left:40px">
+            <!-- <div>${recipe.result.count || 1}x ${recipe.result.item}</div> -->
+        `;
+    }
+
+    container.appendChild(grid);
+    container.appendChild(result);
+
+    document.getElementById('recipes').appendChild(container);
 }
 
 // DEBUG : FOR NOW WORKING
 // loadRecipe("oxonium_block");
 // loadRecipe("allemanite_block");
-loadRecipe("allemanite_necklace")
+// loadRecipe("oxonium_furnace")
+// loadRecipe("oxonium_necklace")
+loadRecipes();
