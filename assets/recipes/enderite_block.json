@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"EEE",
+		"EEE",
+		"EEE"
+	],
+	
+	"key":
+	{
+		"E":
+		{
+			"item": "chaosmod:enderite_ingot"
+		}
+
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:enderite_block",
+		"count": 1
+	}
+}

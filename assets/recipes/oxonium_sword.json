@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"O",
+		"O",
+		"S"
+	],
+	
+	"key":
+	{
+		"O":
+		{
+			"item": "chaosmod:oxonium_ingot"
+		},
+
+		"S":
+		{
+			"item": "minecraft:stick"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:oxonium_sword",
+		"count": 1
+	}
+}

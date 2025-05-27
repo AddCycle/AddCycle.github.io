@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	
+	"ingredients":
+	[
+		{
+			"item": "chaosmod:allemanite_block"
+		}
+	],
+	
+	"result":
+	{
+		"item": "chaosmod:allemanite_ingot",
+		"count": 9
+	}
+}

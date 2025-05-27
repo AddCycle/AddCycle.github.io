@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"aai",
+		"aa ",
+		"aa "
+	],
+	
+	"key":
+	{
+		"a":
+		{
+			"item": "chaosmod:allemanite_ingot"
+		},
+		"i":
+		{
+			"item": "minecraft:iron_ingot"
+		}
+
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:allemanite_extinguisher",
+		"count": 1
+	}
+}

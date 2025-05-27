@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"AA",
+		" S",
+		" S"
+	],
+	
+	"key":
+	{
+		"A":
+		{
+			"item": "chaosmod:allemanite_ingot"
+		},
+
+		"S":
+		{
+			"item": "minecraft:stick"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:allemanite_hoe",
+		"count": 1
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"sss",
+		"s s",
+		" x "
+	],
+	
+	"key":
+	{
+		"x":
+		{
+			"item": "chaosmod:oxonium_ingot"
+		},
+
+		"s":
+		{
+			"item": "minecraft:string"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:oxonium_necklace",
+		"count": 1
+	}
+}

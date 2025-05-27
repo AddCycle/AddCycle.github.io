@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"AAA",
+		"AAA",
+		"AAA"
+	],
+	
+	"key":
+	{
+		"A":
+		{
+			"item": "chaosmod:allemanite_ingot"
+		}
+
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:allemanite_block",
+		"count": 1
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "key": {
+    "#": {
+      "item": "chaosmod:oxonium_ingot"
+    },
+    "X": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "chaosmod:oxonium_bow"
+  }
+}

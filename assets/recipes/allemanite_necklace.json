@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"sss",
+		"s s",
+		" a "
+	],
+	
+	"key":
+	{
+		"a":
+		{
+			"item": "chaosmod:allemanite_ingot"
+		},
+
+		"s":
+		{
+			"item": "minecraft:string"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:allemanite_necklace",
+		"count": 1
+	}
+}

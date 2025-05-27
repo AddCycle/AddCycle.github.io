@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"OOO",
+		"OCO",
+		"OOO"
+	],
+	
+	"key":
+	{
+		"O":
+		{
+			"item": "chaosmod:oxonium_ingot"
+		},
+
+		"C":
+		{
+			"item": "minecraft:chest"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:oxonium_chest",
+		"count": 1
+	}
+}

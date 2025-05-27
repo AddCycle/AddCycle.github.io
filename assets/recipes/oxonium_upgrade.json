@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"OOO",
+		"OIO",
+		"OOO"
+	],
+	
+	"key":
+	{
+		"O":
+		{
+			"item": "chaosmod:oxonium_ingot"
+		},
+
+		"I":
+		{
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:oxonium_upgrade",
+		"count": 1
+	}
+}

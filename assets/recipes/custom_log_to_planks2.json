@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "planks",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "chaosmod:custom_log",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "chaosmod:custom_plank",
+    "data": 2,
+    "count": 4
+  }
+}

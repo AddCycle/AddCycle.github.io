@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"EEE",
+		"EeE",
+		"EEE"
+	],
+	
+	"key":
+	{
+		"e":
+		{
+			"item": "chaosmod:enderite_block"
+		},
+
+		"E":
+		{
+			"item": "chaosmod:enderite_forge_walls"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:forge_interface_block",
+		"count": 1
+	}
+}

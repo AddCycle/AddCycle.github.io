@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern": [
+		"OOO",
+		"O O",
+		"O O"
+	],
+	
+	"key":
+	{
+		"O":
+		{
+			"item": "chaosmod:oxonium_ingot"
+		}
+	},
+	
+	"result":
+	{
+		"item": "chaosmod:oxonium_leggings",
+		"count": 1
+	}
+}
