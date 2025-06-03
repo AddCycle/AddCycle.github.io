@@ -1,14 +1,24 @@
-function loadItems(path) {
-    const elt = document.createElement('img');
-    elt.className = 'test';
-    elt.src = `/assets/static/item/${path.replace(':', '_')}.png`;
-    return elt;
+function loadItem(path) {
+    const img = document.createElement('img');
+    img.className = 'test';
+    img.src = `/assets/static/item/${path.replace(':', '_')}.png`;
+    img.alt = path;
+    img.title = path;
+    return img;
 }
 
-const container = document.createElement('div');
-container.className = 'item1';
+async function loadAllItems() {
+    const response = await fetch('/assets/item_index.json');
+    const items = await response.json();
 
-container.appendChild(loadItems("chaosmod:allemanite_necklace"));
-container.appendChild(loadItems("chaosmod:oxonium_necklace"));
-container.appendChild(loadItems("chaosmod:enderite_sword"));
-document.getElementById('item-list').appendChild(container);
+    const container = document.createElement('div');
+    container.className = 'item1';
+
+    items.forEach(item => {
+        container.appendChild(loadItem(item));
+    });
+
+    document.getElementById('item-list').appendChild(container);
+}
+
+loadAllItems();
