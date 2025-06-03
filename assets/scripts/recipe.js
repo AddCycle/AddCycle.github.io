@@ -154,6 +154,7 @@ function renderRecipe(recipe) {
                 const itemPath = entry.item || entry.tag;
                 if (itemPath) {
                     const img = document.createElement('img');
+                    img.className = 'items';
                     img.src = `/assets/static/item/${itemPath.replace(':', '_')}.png`;
                     img.alt = itemPath;
                     img.title = itemPath; // Tooltip part done
@@ -184,7 +185,7 @@ function renderRecipe(recipe) {
 
     result.innerHTML = `
         <div style="position: relative; display: inline-block; margin-left: 40px;">
-            <img src="/assets/static/item/${resultItem}.png" alt="${resultItem}" title="${recipe.result.item}">
+            <img class="items" src="/assets/static/item/${resultItem}.png" alt="${resultItem}" title="${recipe.result.item}">
             <div style="
                 position: absolute;
                 bottom: 2px;
