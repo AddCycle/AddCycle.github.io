@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
-    <title>ChaosMod Wiki</title>
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
-    <style>
+  <meta charset="UTF-8" />
+  <title>ChaosMod Wiki</title>
+  <link rel="stylesheet" type="text/css" href="/style/global.css">
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <style>
     table {
       margin: 1em;
       border-collapse: collapse;
     }
+
     td {
       width: 32px;
       height: 32px;
       border: 1px solid #444;
       background: #222;
-      margin-left:0;
+      margin-left: 0;
     }
+
     img.items {
       width: 32px;
       height: 32px;
       image-rendering: pixelated;
     }
+
     .result {
       margin-top: 1em;
       font-weight: bold;
       display: flex;
-      padding:0;
+      padding: 0;
     }
+
     .recipe {
-  display: flex;
-  flex-direction: line; /* stack grid and result vertically */
-  align-items: center;
-}
+      display: flex;
+      flex-direction: line;
+      /* stack grid and result vertically */
+      align-items: center;
+    }
 
-#recipe-grid table td {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #ccc;
-}
+    #recipe-grid table td {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #ccc;
+    }
 
-#recipe-result {
-  margin-top: 0;
-  text-align: center;
-}
+    #recipe-result {
+      margin-top: 0;
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
-    <h1 class="title-page"><a href="#">ChaosMod Wiki</a></h1>
-    <img src="/assets/icon/chaosmod_title.png" alt="ChaosModTitle" style="image-rendering: auto; display:block; margin:auto;" /> <!-- width="32px" height="32px" /> -->
-    <h2 class="content" style="text-align:left;margin-left:1%;">Items</h2>
-    <div id="item-list"></div>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Blocks</h2>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Crafting</h2>
-    <div id="recipes"></div>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Structures</h2>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Loots</h2>
-    <h2 class="content" style="text-align:left;margin-left:1%;">PNJs</h2>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Trades</h2>
-    <h2 class="content" style="text-align:left;margin-left:1%;">Bosses</h2>
-    <script src="/assets/scripts/items.js"></script>
-    <script src="/assets/scripts/recipe.js"></script>
+  <header>
+    <h1 class="title"><a href="#">AddCycle</a></h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/devs.html">For developpers</a></li>
+        <li class="right"><a href="/about.html">About</a></li>
+        <li class="right"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="title"><a href="#" style="text-decoration: none;">ChaosMod Wiki</a></h1>
+  <img class="logo" src="/assets/icon/chaosmod_title.png" alt="ChaosModTitle" />
+  <h2 class="content" style="text-align:left;margin-left:1%;">Items</h2>
+  <div id="item-list"></div>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Blocks</h2>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Crafting</h2>
+  <div id="recipes"></div>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Structures</h2>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Loots</h2>
+  <h2 class="content" style="text-align:left;margin-left:1%;">PNJs</h2>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Trades</h2>
+  <h2 class="content" style="text-align:left;margin-left:1%;">Bosses</h2>
+
+  <footer>
+    <div class="more-infos">
+      <p class="footer-title">AddCycle</p>
+      <p class="footer-content">Hi, I'm Adel Belkercha currently in a cyber security school for studies, I like doing
+        sport & making games.
+      </p>
+      <p class="footer-content">If you enjoy my work, you can support me on <a
+          href="https://ko-fi.com/addcycle">Ko-fi</a> !
+        Thank you so much !
+      </p>
+      <p class="footer-end">&copy; Adel Belkercha (2025 - 2026)</p>
+    </div>
+  </footer>
+  <script src="/assets/scripts/items.js"></script>
+  <script src="/assets/scripts/recipe.js"></script>
 </body>
+
 </html>
