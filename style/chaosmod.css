@@ -1,0 +1,43 @@
+  table {
+    margin: 1em;
+    border-collapse: collapse;
+  }
+
+  td {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #444;
+    background: #222;
+    margin-left: 0;
+  }
+
+  img.items {
+    width: 32px;
+    height: 32px;
+    image-rendering: pixelated;
+  }
+
+  .result {
+    margin-top: 1em;
+    font-weight: bold;
+    display: flex;
+    padding: 0;
+  }
+
+  .recipe {
+    display: flex;
+    flex-direction: line;
+    /* stack grid and result vertically */
+    align-items: center;
+  }
+
+  #recipe-grid table td {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ccc;
+  }
+
+  #recipe-result {
+    margin-top: 0;
+    text-align: center;
+  }
